@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Billions poured into anti-aging life sciences research; where to invest? -  a guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../index.css"></head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <a href="/" class="go_back"><i class="fas fa-arrow-left"></i></a>
+    <div id="background_overlay"></div>
+    <div id="background" style="background: url(top_image.jpeg) center;"></div>
+    <table id="profile_blog">
+      <tbody>
+        <tr>
+          <td style="width:8vw;"><div id="profile_img_blog"></div></td>
+          <td style="width:52vw;">
+            <div id="username_blog"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="blog-display">
+      <h1 id="blog_title">Billions poured into anti-aging life sciences research; where to invest? -  a guide</h1>
+      <h2 id="blog_sub_title">Thinking about investing in longevity? This is 101 to get you a headstart. </h2>
+      <div id="blog"><img src="img_0.jpeg" alt="blog image 0" id="img_0_original"><p id="para_0_original">Longevity and anti-aging are two of the most promising and rapidly growing industries of our time. Advances in biotechnology and healthcare are making it increasingly possible to extend the human lifespan and improve the quality of life for people as they age. These developments have attracted significant attention and investment from venture capitalists and angel investors, but not all of them may have a sophisticated biotech background. So, why should they care about this industry?</p><p id="para_1_original">
+The first reason is that the anti-aging product and service market is projected to increase in the coming years. According to a report from Research and Markets, the global anti-aging market is expected to reach $331 billion by 2024, growing at a CAGR of 6.5% during the forecast period. This presents a significant opportunity for investors to profit from the growth of this market.
+
+The second reason is that the research and development of anti-aging technologies can significantly impact society by addressing some of our most pressing health challenges, such as age-related diseases. By investing in companies developing these technologies, angel investors can make a financial return and contribute to developing solutions that could improve the lives of millions of people worldwide.
+</p><img src="img_1.png" alt="blog image 1" id="img_1_original"><p id="para_2_original">
+Additionally, it's worth mentioning that other organizations are also investing heavily in research on aging and health span. For example, the Saudi royal family has started the Hevolution Foundation, a not-for-profit organization that plans to spend up to $1 billion per year of its oil wealth supporting basic research on the biology of aging and finding ways to extend the number of years people live in good health. This fund, managed by Mehmood Khan, a former Mayo Clinic endocrinologist and the onetime chief scientist at PepsiCo, could make Saudi Arabia the largest single sponsor of researchers attempting to understand the underlying causes of aging—and how it might be slowed down with drugs.
+</p><img src="img_2.png" alt="blog image 2" id="img_2_original"><p id="para_3_original">It is important to note that aging is not just about time span but about how each organ deteriorates and mental diseases contribute to cognitive decline. Kidney malfunction and bone deterioration cause the homeostasis body and the skeleton to decline, respectively. The reason companies focused on research and developing anti-aging technologies are focused on combating diseases and chronic conditions and improving quality of life and stress reduction mechanisms. The ventures that address these issues are critical to extending the human lifespan and improving the quality of life as we age.</p><img src="img_3.jpeg" alt="blog image 3" id="img_3_original"><p id="para_4_original">Are you still reading? Interested in exploring scientific research? Head to the blog about the LongevityAI app - a personal consultant to answer questions for you! Keep reading part II if you are up for a challenge to know everything about how MBS and Bezos plan to spend Billions on living forever. 
+</p></div>
+    </div>
+    <div id="footer_blog">
+      <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("../../config.json", function(user) {
+        var icon = document.createElement("link");
+        icon.setAttribute("rel", "icon");
+        icon.setAttribute("href", user[0].userimg);
+        icon.setAttribute("type", "image/png");
+        document.getElementsByTagName("head")[0].appendChild(icon);
+        document.getElementById(
+          "profile_img_blog"
+        ).style.background = `url('${user[0].userimg}') center center`;
+        document.getElementById(
+          "username_blog"
+        ).innerHTML = `<span style="display:${
+          user[0].name == null || !user[0].name ? "none" : "block"
+        };">${user[0].name}</span>@${user[0].username}<b id="blog_time"></b>`;
+
+        if ((user[0].theme = "dark.css")) {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.1))";
+        } else {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1))";
+        }
+      });
+    </script>
+  
+
+</body></html>
